@@ -1,34 +1,33 @@
 /* PAGINA INICIAL */
 
 .pag-inicial {
-    margin: 0;
-    padding: 0;
-    background-image: url('img/4.avif');
-    background-size: cover; /* Faz a imagem cobrir todo o corpo */
-    background-position: center; /* Centraliza a imagem */
-    height: 100vh; /* Faz o corpo ocupar toda a altura da tela */
-  
+  margin: 0;
+  padding: 0;
+  background-image: url('img/4.avif');
+  background-size: cover; /* Faz a imagem cobrir todo o corpo */
+  background-position: center; /* Centraliza a imagem */
+  height: 100vh; /* Faz o corpo ocupar toda a altura da tela */  
 }
 
 .texto-nav {
-text-decoration-line: none;
-text-decoration: none;
-text-decoration-color: black;
-    margin-right: 30px;
-    color: rgb(56, 26, 21);
-    font-size: 20px;
-opacity: 100%;
+  text-decoration-line: none;
+  text-decoration: none;
+  text-decoration-color: black;
+  margin-right: 30px;
+  color: rgb(56, 26, 21);
+  font-size: 20px;
+  opacity: 100%;
 }
 
 .texto-nav1 {
   text-decoration-line: none;
   text-decoration: none;
   text-decoration-color: black;
-      margin-right: 30px;
-      color: rgb(241, 234, 232);
-      font-size: 20px;
+  margin-right: 30px;
+  color: rgb(241, 234, 232);
+  font-size: 20px;
   opacity: 100%;
-  }
+}
 
 #nav-inicial1{
   background-color: rgb(85, 150, 98);
@@ -37,41 +36,40 @@ opacity: 100%;
 /* IMAGEM ESTRELA TRANSICAO */
 
 .transition-image {
-    position: fixed;
-    top: 150px;
-    left: 500px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    opacity: 0;
-    background-image: url('img/star1.png');
-    background-size: cover;
-    animation: fadeInOut 2s ease-in-out;
-    width: 500px;
-    height: 500px;
-  }
+  position: fixed;
+  top: 150px;
+  left: 500px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  background-image: url('img/star1.png');
+  background-size: cover;
+  animation: fadeInOut 2s ease-in-out;
+  width: 500px;
+  height: 500px;
+}
   @keyframes fadeInOut {
     0%, 100% { opacity: 0; }
     50% { opacity: 10; }
   }
 
   /* SUB-PAGINAS- CONTEUDO PRINCIPAL - DIVS */
-  .sos {
-    
-    background-color: antiquewhite;
-    display: flex;
-    justify-content:flex-start;
-    align-items: flex-start;
-    
-    padding-top: 50px;
-    padding: 20px;
-    margin: 0px;
+
+.sos {
+  background-color: antiquewhite;
+  display: flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding: 20px;
+  margin: 0px;
     /* min-width: 45%;
     max-width: 100%; */
     /* flex-wrap: wrap; */
-    gap: 10px;
+  gap: 10px;
     /* flex-direction: row; */
-  }
+}
 
   .img-div {
     box-shadow: 5px 5px 15px #a7a7a7;
@@ -123,7 +121,6 @@ opacity: 100%;
   }
 
   .text-div {
-   
     background-color: antiquewhite;
     border-radius: 30px;
     margin: 10px;
@@ -141,7 +138,6 @@ opacity: 100%;
   }
 
   .text-div1 {
-
     background-color:  antiquewhite;
     border-radius: 30px;
     margin: 10px;
@@ -177,6 +173,7 @@ opacity: 100%;
     color: rgb(229, 238, 233);
     text-shadow: #272d26 0.1em 0.1em 0.1em;
   }
+  
   .titulo-botao{
     display: flex;
     justify-content: center;
