@@ -17,13 +17,15 @@
 <header>
   <nav class="navbar navbar-light " id="nav-inicial1">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="principal">
         <p class="home"><i class="ph ph-house-line"></i> HOME</p>
 
       </a>
       <div class="texto-nav-principal2">
-        <a class="texto-nav" href="/historia"><i class="ph-duotone ph-book-bookmark"></i> História</a>
-        <a class="texto-nav" href="{{ route('site.culturab') }}"><i class="ph ph-grains"></i> Cultura Berbere</a>
+      <a class="texto-nav1" href="/register"><i class="ph ph-key"></i>Cadastro</a>
+      <a class="texto-nav1" href="/login"><i class="ph ph-sign-in"></i>Login</a>
+        <a class="texto-nav1" href="historia"><i class="ph-duotone ph-book-bookmark"></i> História</a>
+        <a class="texto-nav1" href="{{ route('site.culturab') }}"><i class="ph ph-grains"></i> Cultura Berbere</a>
         <a class="texto-nav1" href="culinaria"><i class="ph ph-bowl-steam"></i> Culinária</a>
         <a class="texto-nav1" href="lugares"><i class="ph ph-map-pin-area"></i> Lugares Turisticos</a>
         <a class="texto-nav1" href="flora"><i class="ph ph-tree"></i> Flora</a>

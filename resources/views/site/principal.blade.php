@@ -11,11 +11,13 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
-<header>
+<body class="pag-inicial">
 
-  <nav class="navbar navbar-light " id="nav-inicial">
+  <nav class="navbar navbar-light navbar-transparent" id="nav-inicial">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
+
+
         <div id="estrela">
           <!-- <img id="star" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgn3jhYdCjhxPk_hXKLXRfUaaCgZPCF9_liEGiGX-I7Ee2nsfVbr23viFL3kGmuH5ljquw46ERLwhnl17v8bymuo7lNOkhdNxcC5EpHfZoZtvIr6KpuVM9fViu61p9679VL02lqvaAKzKA/s1600/Morocco+flag+gif+animation.gif" alt="" width="100" height="100"
                 > -->
@@ -23,24 +25,26 @@
 
       </a>
       <div class="texto-nav-principal">
+      <a class="texto-nav" href="/register"><i class="ph ph-key"></i>Cadastro</a>
+      <a class="texto-nav" href="/login"><i class="ph ph-sign-in"></i>Login</a>
         <a class="texto-nav" href="/historia"><i class="ph-duotone ph-book-bookmark"></i> História</a>
           <a class="texto-nav" href="{{ route('site.culturab') }}"><i class="ph ph-grains"></i> Cultura Berbere</a>
-          <a class="texto-nav1" href="culinaria"><i class="ph ph-bowl-steam"></i> Culinária</a>
-        <a class="texto-nav1" href="lugares"><i class="ph ph-map-pin-area"></i> Lugares Turisticos</a>
-        <a class="texto-nav1" href="flora"><i class="ph ph-tree"></i> Flora</a>
-        <a class="texto-nav1" href="fauna"><i class="ph ph-bird"></i> Fauna</a>
-        <a class="texto-nav1" href="flora"><i class="ph ph-island"></i> Praias</a>
+          <a class="texto-nav" href="culinaria"><i class="ph ph-bowl-steam"></i> Culinária</a>
+        <a class="texto-nav" href="lugares"><i class="ph ph-map-pin-area"></i> Lugares Turisticos</a>
+        <a class="texto-nav" href="flora"><i class="ph ph-tree"></i> Flora</a>
+        <a class="texto-nav" href="fauna"><i class="ph ph-bird"></i> Fauna</a>
+        <a class="texto-nav" href="flora"><i class="ph ph-island"></i> Praias</a>
       </div>
     </div>
   </nav>
-</header>
 
-<body class="pag-inicial">
-<img src="{{ asset('img/4.avif') }}" alt="">
+
+
+<img src="{{ asset('img/4.avif') }}" alt="" type="image/avif" class="background-image">
   <!-- <div class="text-center">
         <img src="img/star-removebg-preview.png" class="rounded" alt="...">
       </div> -->
-  <div class="transition-image"></div>
+  <div class="transition-image" id="transition-image"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

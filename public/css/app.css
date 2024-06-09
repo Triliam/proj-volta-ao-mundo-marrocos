@@ -1,9 +1,13 @@
 /* PAGINA INICIAL */
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .pag-inicial {
     margin: 0;
     padding: 0;
-    background-image: url( 'img/4.avif' );
+    background: url('{{ asset("/img/4.avif") }}');
     background-size: cover; /* Faz a imagem cobrir todo o corpo */
     background-position: center; /* Centraliza a imagem */
     height: 100vh; /* Faz o corpo ocupar toda a altura da tela */
@@ -29,6 +33,17 @@
     opacity: 100%;
   }
 
+  .texto-nav1:hover{
+    color: rgb(56, 26, 21);
+  }
+
+  .texto-nav:hover{
+    color: rgb(4, 30, 10);
+  }
+
+  .home:hover {
+    color: rgb(56, 26, 21);
+  }
   #nav-inicial1{
     background-color: rgb(85, 150, 98);
   }
@@ -43,7 +58,7 @@
     height: 100%;
     z-index: 9999;
     opacity: 0;
-    background-image: url('img/star1.png');
+    background-image: url('/public/img/4.avif');
     background-size: cover;
     animation: fadeInOut 2s ease-in-out;
     width: 500px;
@@ -54,6 +69,25 @@
       50% { opacity: 10; }
     }
 
+
+    #transition-image {
+        position: fixed;
+        top: 150px;
+        left: 500px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        opacity: 0;
+        background-image: url('{{ asset("/img/star1.png") }}');
+        background-size: cover;
+        animation: fadeInOut 2s ease-in-out;
+        width: 500px;
+        height: 500px;
+      }
+        @keyframes fadeInOut {
+          0%, 100% { opacity: 0; }
+          50% { opacity: 10; }
+        }
     /* SUB-PAGINAS- CONTEUDO PRINCIPAL - DIVS */
 
   .sos {
@@ -185,4 +219,26 @@
       margin: 10px;
       padding: 10px;
       color: rgb(229, 238, 233);
+    }
+
+
+    .navbar-transparent {
+        background-color: transparent !important; /* Define o plano de fundo como transparente */
+        border-color: transparent !important; /* Define a cor da borda como transparente, se houver */
+    }
+    .background-image {
+        position: absolute; /* Define a posição da imagem como absoluta */
+        top: 0; /* Alinha a imagem ao topo do corpo */
+        left: 0; /* Alinha a imagem à esquerda do corpo */
+        width: 100%; /* Define a largura da imagem como 100% do corpo */
+        height: 100%; /* Define a altura da imagem como 100% do corpo */
+        z-index: -1; /* Coloca a imagem atrás de todos os outros elementos, incluindo a barra de navegação */
+    }
+    .container1 {
+     
+        display: flex;
+        align-items: center;
+        align-self: center;
+        justify-items: center;
+        flex-direction: column;
     }

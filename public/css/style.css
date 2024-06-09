@@ -10,8 +10,19 @@
     --cor-preta: #000000; /* Preto */
 }
 
+.comentario {
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 5px;
+   padding: 9px;
+}
+   .comment {
+    margin: 10px;
+   }
 
-
+.imagem {
+    margin: 10px;
+}
 .texto-nav {
     text-decoration-line: none;
     text-decoration: none;
@@ -138,6 +149,28 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
     background-color: #004a29; /* Verde mais escuro ao passar o mouse */
+}
+
+.editar {
+    background-color: var(--cor-verde);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    text-decoration: none;
+}
+.editar:link, .editar:visited, .editar:hover, .editar:active {
+    color: inherit; /* Mantém a cor do texto ao invés de mudar */
+}
+
+.editar:hover {
+    background-color: #004a29; /* Verde mais escuro ao passar o mouse */
+}
+.posts {
+    margin: 15px;
+    background-color: aliceblue;
 }
 
 /* Estilos dos comentários */

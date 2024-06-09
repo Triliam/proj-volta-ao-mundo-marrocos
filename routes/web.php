@@ -39,13 +39,13 @@ Route::middleware('auth')->group(function () {
 
 });
 
-// Redirecionar a rota raiz para a página de login
-Route::get('/', function () {
-    return redirect()->route('login');
-});
+// // Redirecionar a rota raiz para a página de login
+// Route::get('/', function () {
+//     return redirect()->route('login');
+// });
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('site.principal');
 });
 
 //ROTAS CADASTRO LOGIN
