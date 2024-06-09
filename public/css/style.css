@@ -1,0 +1,159 @@
+/* styles.css */
+
+
+
+
+/* Cores da bandeira de Marrocos */
+:root {
+    --cor-vermelha: #c8102e; /* Vermelho */
+    --cor-verde: #006233; /* Verde */
+    --cor-preta: #000000; /* Preto */
+}
+
+
+
+.texto-nav {
+    text-decoration-line: none;
+    text-decoration: none;
+    text-decoration-color: black;
+    margin-right: 30px;
+    color: rgb(56, 26, 21);
+    font-size: 20px;
+    opacity: 100%;
+  }
+
+  .texto-nav1 {
+    text-decoration-line: none;
+    text-decoration: none;
+    text-decoration-color: black;
+    margin-right: 30px;
+    color: rgb(241, 234, 232);
+    font-size: 20px;
+    opacity: 100%;
+  }
+
+  #nav-inicial1{
+    background-color: rgb(85, 150, 98);
+  }
+
+  .titulo-sub-pagina{
+    border-radius: 15px;
+    background-color:  rgb(85, 150, 98);
+    border: none;
+    padding: 20px;
+    padding-left: 5px;
+    padding-right: 30px;
+    margin: 20px;
+    align-self: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 55px;
+    background-color: rgb(85, 150, 98);
+    box-shadow: 5px 5px 15px #a7a7a7;
+    cursor: none;
+    color: rgb(229, 238, 233);
+    text-shadow: #272d26 0.1em 0.1em 0.1em;
+  }
+
+  .titulo-botao{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    cursor: none;
+  }
+
+  .home {
+    margin: 10px;
+    padding: 10px;
+    color: rgb(229, 238, 233);
+  }
+
+/* Estilos gerais */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(52, 119, 100);
+    color: var(--cor-preta);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 50px;
+    padding: 20px;
+    margin: 0px;
+
+    gap: 10px;
+} */
+
+.container {
+
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 5px 5px 15px #a7a7a7;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    border: 3px;
+    padding: 10px;
+    margin: 10px;
+
+    /* flex-flow: column;
+    display: flex; */
+
+    min-width: 45%;
+}
+
+h1, h2 {
+    color: var(--cor-vermelha);
+}
+
+/* Estilos do formulário */
+form {
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form textarea,
+form input[type="file"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    background-color: var(--cor-verde);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #004a29; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Estilos dos comentários */
+.comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.comment img {
+    max-width: 100%;
+    height: auto;
+}

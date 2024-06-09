@@ -1,0 +1,107 @@
+/* Estilos gerais */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Cor de fundo cinza claro */
+
+}
+
+
+
+h1 {
+    color: #333; /* Cor do título escuro */
+    text-align: center; /* Alinha o título ao centro */
+}
+
+form {
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 20px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+}
+
+label {
+    display: block; /* Coloca os rótulos em uma nova linha */
+    margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px;
+    box-sizing: border-box; /* Mantém o tamanho total do elemento, incluindo padding e borda */
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Cor de fundo verde escuro quando hover */
+}
+
+/* Flex container to center the form */
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Center form elements and increase input width */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Styling for labels */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+/* Styling for input fields */
+input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Styling for the button */
+button {
+    padding: 10px 20px;
+    background-color: #c1272d; /* Moroccan flag color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make the button full-width */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #a21e23; /* Darker shade for hover */
+}

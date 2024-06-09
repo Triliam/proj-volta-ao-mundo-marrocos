@@ -1,0 +1,61 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Cor de fundo cinza claro */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px; /* Largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na página */
+    padding: 20px;
+}
+
+h1 {
+    color: #333; /* Cor do título escuro */
+    text-align: center; /* Alinha o título ao centro */
+}
+
+form {
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 20px;
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+label {
+    display: block; /* Coloca os rótulos em uma nova linha */
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 5px;
+    box-sizing: border-box; /* Mantém o tamanho total do elemento, incluindo padding e borda */
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Cor de fundo verde escuro quando hover */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+}

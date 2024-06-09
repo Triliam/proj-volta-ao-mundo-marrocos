@@ -1,0 +1,188 @@
+/* PAGINA INICIAL */
+
+.pag-inicial {
+    margin: 0;
+    padding: 0;
+    background-image: url( 'img/4.avif' );
+    background-size: cover; /* Faz a imagem cobrir todo o corpo */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh; /* Faz o corpo ocupar toda a altura da tela */
+  }
+
+  .texto-nav {
+    text-decoration-line: none;
+    text-decoration: none;
+    text-decoration-color: black;
+    margin-right: 30px;
+    color: rgb(56, 26, 21);
+    font-size: 20px;
+    opacity: 100%;
+  }
+
+  .texto-nav1 {
+    text-decoration-line: none;
+    text-decoration: none;
+    text-decoration-color: black;
+    margin-right: 30px;
+    color: rgb(241, 234, 232);
+    font-size: 20px;
+    opacity: 100%;
+  }
+
+  #nav-inicial1{
+    background-color: rgb(85, 150, 98);
+  }
+
+  /* IMAGEM ESTRELA TRANSICAO */
+
+  .transition-image {
+    position: fixed;
+    top: 150px;
+    left: 500px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0;
+    background-image: url('img/star1.png');
+    background-size: cover;
+    animation: fadeInOut 2s ease-in-out;
+    width: 500px;
+    height: 500px;
+  }
+    @keyframes fadeInOut {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 10; }
+    }
+
+    /* SUB-PAGINAS- CONTEUDO PRINCIPAL - DIVS */
+
+  .sos {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding: 20px;
+    margin: 0px;
+      /* min-width: 45%;
+      max-width: 100%; */
+      /* flex-wrap: wrap; */
+    gap: 10px;
+      /* flex-direction: row; */
+  }
+
+    .img-div {
+      box-shadow: 5px 5px 15px #a7a7a7;
+      background-color: rgb(85, 150, 98);
+      border-radius: 30px;
+      border: 3px;
+      padding: 10px;
+      margin: 10px;
+      /* flex-wrap: wrap; */
+      flex-flow: column;
+      display: flex;
+      /* display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 50%;
+      flex-direction: row; */
+      min-width: 45%;
+    }
+
+    .img-div1 {
+      box-shadow: 5px 5px 15px #a7a7a7;
+      background-color: rgb(85, 150, 98);
+      border-radius: 30px;
+      border: 3px;
+      padding: 10px;
+      margin: 10px;
+      /* flex-wrap: wrap; */
+      flex-flow: column;
+      display: flex;
+      /* display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 50%;
+      flex-direction: row; */
+      min-width: 45%;
+    }
+
+    .img-da-div{
+      border-radius: 30px;
+      border: 3px;
+      margin: 10px;
+      /* flex-wrap: wrap; */
+      flex-flow: column;
+      min-width: 45%;
+      /* min-width: 45%;
+      max-width: 100%; */
+    }
+
+    .text-div {
+      background-color: antiquewhite;
+      border-radius: 30px;
+      margin: 10px;
+      padding: 10px;
+      flex-wrap: wrap;
+      flex-flow: column;
+      /* display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 50%;
+      flex-direction: row;
+    */
+      min-width: 45%;
+    }
+
+    .text-div1 {
+      background-color:  antiquewhite;
+      border-radius: 30px;
+      margin: 10px;
+      padding: 10px;
+      flex-wrap: wrap;
+      flex-flow: column;
+      /* display: flex;
+      position: relative;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 50%;
+      flex-direction: row;
+    */
+      min-width: 45%;
+      text-shadow:#e2e0e0 0.1em 0.1em 0.2em;
+    }
+
+    .titulo-sub-pagina{
+      border-radius: 15px;
+      background-color:  rgb(85, 150, 98);
+      border: none;
+      padding: 20px;
+      padding-left: 5px;
+      padding-right: 30px;
+      margin: 20px;
+      align-self: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: bold;
+      font-size: 55px;
+      background-color: rgb(85, 150, 98);
+      box-shadow: 5px 5px 15px #a7a7a7;
+      cursor: none;
+      color: rgb(229, 238, 233);
+      text-shadow: #272d26 0.1em 0.1em 0.1em;
+    }
+
+    .titulo-botao{
+      display: flex;
+      justify-content: center;
+      margin: 30px;
+      cursor: none;
+    }
+
+    .home {
+      margin: 10px;
+      padding: 10px;
+      color: rgb(229, 238, 233);
+    }

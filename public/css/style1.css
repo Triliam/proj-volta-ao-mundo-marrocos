@@ -1,0 +1,59 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #006233; /* Verde escuro da bandeira de Marrocos */
+    color:black; /* Branco para o texto */
+    margin: 50px;
+    padding: 10px;
+}
+
+/* Estilo para os títulos */
+h1 {
+    color: #c8102e; /* Vermelho da bandeira de Marrocos */
+}
+
+/* Estilo para os rótulos dos campos */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: black; /* Branco para os rótulos dos campos */
+    margin: 10px;
+}
+
+/* Estilo para os campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+/* Estilo para o botão de registrar */
+button {
+    background-color: #c8102e; /* Vermelho da bandeira de Marrocos */
+    color: #f5f5f5; /* Branco para o texto do botão */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 100%; /* Ocupa toda a largura disponível */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+button:hover {
+    background-color: #a3001b; /* Vermelho mais escuro ao passar o mouse */
+}
+
+       /* Estilo para centralizar o conteúdo */
+       .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Altura da tela inteira */
+        width: 100%;
+    }
