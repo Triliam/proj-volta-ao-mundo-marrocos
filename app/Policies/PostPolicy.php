@@ -11,8 +11,6 @@ class PostPolicy
 {
     use HandlesAuthorization;
 
-
-
         // Permite que um usuário atualize seu próprio post
         public function update(User $user, Post $post)
         {

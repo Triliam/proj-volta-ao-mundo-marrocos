@@ -8,6 +8,7 @@ use App\Models\Post;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use App\Models\ImportacoesJson;
 
 class PostController extends Controller
 {
@@ -17,6 +18,30 @@ class PostController extends Controller
         $posts = Post::with('comments.user')->get();
         return view('posts.index', compact('posts'));
     }
+
+    public function index1()
+    {
+        $posts = Post::with('comments')->get();
+        $importacoes = ImportacoesJson::with('user')->get(); // Carregar importações JSON
+
+        // Converter JSON em string formatada para exibição na view
+        foreach ($importacoes as $importacao) {
+            // // Verifica se o campo dados é um JSON válido antes de decodificar
+            // if (is_string($importacao->dados) && is_array(json_decode($importacao->dados, true))) {
+            //     // Decodificar o JSON armazenado no banco de dados para um array associativo
+            //     $dadosArray = json_decode($importacao->dados, true);
+
+                // Codificar o array de volta para uma string JSON formatada
+                $importacao = json_encode($importacao, JSON_PRETTY_PRINT);
+            // } else {
+            //     // Caso não consiga decodificar, atribui uma string vazia ou outra mensagem de erro
+            //     $importacao->dados = "Erro na formatação do JSON";
+            // }
+        }
+
+        return view('posts.index', compact('posts', 'importacoes'));
+    }
+
 
     public function create()
     {
@@ -31,7 +56,7 @@ class PostController extends Controller
         ]);
 
         $path = $request->file('image')->store('images', 'public');
-
+ // Cria um novo post usando Eloquent ORM, automaticamente protegido contra SQL Injection
         Post::create([
             'title' => $request->title,
             'image' => $path,

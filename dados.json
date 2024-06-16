@@ -1,0 +1,24 @@
+{
+    "titulo": "Exemplo de Publicações",
+    "publicacoes": [
+      {
+        "titulo": "Publicação 1",
+        "conteudo": "Este é o conteúdo da publicação 1.",
+        "autor": "Autor 1",
+        "data_publicacao": "2023-01-15"
+      },
+      {
+        "titulo": "Publicação 2",
+        "conteudo": "Este é o conteúdo da publicação 2.",
+        "autor": "Autor 2",
+        "data_publicacao": "2023-02-20"
+      },
+      {
+        "titulo": "Publicação 3",
+        "conteudo": "Este é o conteúdo da publicação 3.",
+        "autor": "Autor 3",
+        "data_publicacao": "2023-03-25"
+      }
+    ]
+  }
+

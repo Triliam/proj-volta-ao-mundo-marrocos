@@ -190,3 +190,26 @@ form button[type="submit"]:hover {
     max-width: 100%;
     height: auto;
 }
+.comment-image-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 10px; /* Espaço entre os comentários */
+    float: right; /* Move a imagem ampliada mais para a direita */
+    margin-right: 20px; /* Ajusta a margem direita para espaço adicional */
+}
+
+.comment-image {
+    width: 200px; /* Ajuste o tamanho inicial da imagem conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.5s ease; /* Transição mais lenta de transformação */
+}
+
+.comment-image:hover {
+    transform: scale(2.5); /* Aumenta a imagem em 50% ao passar o mouse */
+    z-index: 1; /* Coloca a imagem ampliada sobreposta aos outros elementos */
+    /* margin-bottom: 10px; /* Espaço entre os comentários */
+    /* float: right; Move a imagem ampliada mais para a direita */
+    /* margin-right: 20px; Ajusta a margem direita para espaço adicional */
+    margin-left: 115px;
+}

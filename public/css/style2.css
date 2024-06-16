@@ -4,10 +4,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2; /* Cor de fundo cinza claro */
-
 }
-
-
 
 h1 {
     color: #333; /* Cor do título escuro */
@@ -26,7 +23,7 @@ label {
     display: block; /* Coloca os rótulos em uma nova linha */
     margin-bottom: 10px;
 }
-
+input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 50%;
@@ -91,18 +88,38 @@ input {
 }
 
 /* Styling for the button */
-button {
+/* button {
     padding: 10px 20px;
     background-color: #c1272d; /* Moroccan flag color */
-    color: #fff;
+    /* color: #fff;
     border: none;
     border-radius: 5px;
     cursor:none;
     width: 100%; /* Make the button full-width */
-}
+/* } */
 
 /* Hover effect for the button */
 button:hover {
-    background-color: #a21e23; /* Darker shade for hover */
+    background-color: #4f0e10; /* Darker shade for hover */
     cursor: default;
+    cursor: none;
 }
+
+.titulo-sub-pagina{
+    border-radius: 15px;
+    background-color:  rgb(85, 150, 98);
+    border: none;
+    padding: 20px;
+    padding-left: 5px;
+    padding-right: 30px;
+    margin: 20px;
+    align-self: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 55px;
+    background-color: rgb(85, 150, 98);
+    box-shadow: 5px 5px 15px #a7a7a7;
+    cursor: none;
+    color: rgb(229, 238, 233);
+    text-shadow: #272d26 0.1em 0.1em 0.1em;
+  }

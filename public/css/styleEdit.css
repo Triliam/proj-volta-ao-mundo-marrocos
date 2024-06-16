@@ -30,6 +30,7 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
@@ -52,6 +53,32 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #45a049; /* Cor de fundo verde escuro quando hover */
 }
+
+.titulo-sub-pagina{
+    border-radius: 15px;
+    background-color:  rgb(85, 150, 98);
+    border: none;
+    padding: 20px;
+    padding-left: 5px;
+    padding-right: 30px;
+    margin: 20px;
+    align-self: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 55px;
+    background-color: rgb(85, 150, 98);
+    box-shadow: 5px 5px 15px #a7a7a7;
+    cursor: none;
+    color: rgb(229, 238, 233);
+    text-shadow: #272d26 0.1em 0.1em 0.1em;
+  }
+
+  .titulo-botao{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    cursor: none;
+  }
 
 /* Estilos responsivos */
 @media screen and (max-width: 600px) {

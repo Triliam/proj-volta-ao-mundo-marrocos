@@ -5,6 +5,9 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\ImportacoesJsonController;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 
 
 
@@ -17,6 +20,14 @@ Route::post('login', [LoginController::class, 'login']);
 //     Auth::logout();
 //     return redirect()->route('login');
 // })->name('logout');
+
+    // Outra forma seria definir diretamente a função como um closure.
+Route::post('logout', function (Request $request) {
+    Auth::logout();
+    $request->session()->invalidate();
+    $request->session()->regenerateToken();
+    return redirect('/');
+})->name('logout');
 
 // Rotas protegidas por autenticação
 Route::middleware('auth')->group(function () {
@@ -36,6 +47,11 @@ Route::middleware('auth')->group(function () {
     Route::get('posts/{post}/comments/{comment}/edit', [CommentController::class, 'edit'])->name('comments.edit');
     Route::put('posts/{post}/comments/{comment}', [CommentController::class, 'update'])->name('comments.update');
     Route::delete('posts/{post}/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
+
+    Route::post('/importar-json', [ImportacoesJsonController::class, 'importarJson'])->name('importar.json');
+    // Route::get('/importacoes-json', [ImportacoesJsonController::class, 'show'])->name('importacoes.json.show');
+    Route::get('/posts', [PostController::class, 'index1'])->name('posts.index');
+    Route::delete('/import-json/{id}', [ImportacoesJsonController::class, 'destroy'])->name('import-json.destroy');
 
 });
 
@@ -84,7 +100,7 @@ Route::get('/culturab', [\App\Http\Controllers\CulturaBController::class, 'princ
 Route::get('/culinaria', [\App\Http\Controllers\CulinariaController::class, 'princ']);
 Route::get('/fauna', [\App\Http\Controllers\FaunaController::class, 'princ']);
 Route::get('/flora', [\App\Http\Controllers\FloraController::class, 'princ']);
-Route::get('/praia', [\App\Http\Controllers\PraiaController::class, 'princ']);
+Route::get('/praias', [\App\Http\Controllers\PraiaController::class, 'princ']);
 Route::get('/lugares', [\App\Http\Controllers\LugaresTuristicosController::class, 'princ']);
 
 
